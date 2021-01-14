@@ -9,7 +9,7 @@ public class Estoque {
     public void inserirProduto(Produto produto){
         int marca = 0;
         for (Produto i: produtos){
-            if ((i.getId() == produto.getId()) || (i.getDescricao() == produto.getDescricao())){
+            if ((i.getId() == produto.getId()) && (i.getDescricao() == produto.getDescricao())){
                 marca = 1;
                 break;
             }
